@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-"""
-Startup script for NVIDIA NeMo Guardrails API
-"""
 
 import os
 import sys
