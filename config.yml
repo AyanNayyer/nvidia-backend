@@ -1,0 +1,22 @@
+
+models:
+  - type: main
+    engine: openai
+    model: gpt-3.5-turbo
+
+flows:
+  - name: general_conversation
+    elements:
+      - type: user_message
+        content: "{{ user_message }}"
+      
+      - type: bot_message
+        content: "{{ generate_response() }}"
+
+sample_conversations:
+  - messages:
+      - role: user
+        content: "Hello, how are you?"
+      - role: assistant
+        content: "Hello! I'm doing well, thank you for asking. How can I help you today?"
+        
